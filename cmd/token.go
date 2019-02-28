@@ -101,7 +101,7 @@ func macRequest(ak, sk, url, body, contentType, method string) (mac *qbox.Mac, r
 	return
 }
 
-// QBox Token, 一般bucket相关的接口需要这个token
+// QBoxToken Token, 一般bucket相关的接口需要这个token
 func QBoxToken(cmd *cobra.Command, args []string) {
 	mac, req, mErr := macRequest(ak, sk, args[0], httpBody, contentType, "")
 	if mErr != nil {

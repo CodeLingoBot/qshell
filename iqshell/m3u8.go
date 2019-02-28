@@ -112,7 +112,7 @@ func (m *BucketManager) DownloadLink(bucket, key string) (dnLink string, err err
 	return
 }
 
-//replace and upload
+//M3u8ReplaceDomain replaces and upload
 func (m *BucketManager) M3u8ReplaceDomain(bucket string, m3u8Key string, newDomain string) (err error) {
 	dnLink, err := m.DownloadLink(bucket, m3u8Key)
 
